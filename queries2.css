@@ -86,4 +86,7 @@ HOVER STATES
         transform: translate(5px, 5px);
         box-shadow: none;
     }
+
+    .projectLinkToGithub:hover, .projectLinkToLive:hover {
+        background-color: transparent;    }
 }

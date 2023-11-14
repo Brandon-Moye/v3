@@ -293,6 +293,7 @@
   color: #000;
   font-size: 1.25rem;
   font-weight: 600;
+  transition: all 0.25s ease-in-out;
 
 }
 
@@ -330,11 +331,6 @@
   background-color: rgb(216, 255, 255);
 }
 
-
-.resumeBackgroundContainer {
-  /* background-color: #ff6c0a28; */
-  width: 100vw;
-}
 .resumeSvgContainer, .resumeLinkContainer {
 display: flex;
 justify-content: center;
