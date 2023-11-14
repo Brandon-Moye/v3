@@ -20,7 +20,7 @@
     font-family: "Merriweather", serif;
     font-family: 'Roboto', sans-serif;
     margin: 0 auto;
-    /* background-color: whitesmoke; */
+    background-color: #fff0e7;
   }
 
 .allNavContainer {
@@ -58,6 +58,7 @@
   max-width: 90rem;
   margin: 0 auto;
   /* border: 1px solid black */
+  min-height: 60rem;
 }
 
 .salutations, .signoff {
@@ -86,6 +87,7 @@
   color: #FF6C0A;
   text-decoration: underline;
   text-underline-offset: 0.75rem;
+  transition: 0.5s;
 }
 
 .codingLanguageText {
@@ -170,12 +172,13 @@
 }
 
 .projectsSectionTitle, .resumeSectionTitle, .contactSectionTitle {
-  font-size: 3rem;
+  font-size: clamp(3rem, 10vw + 1rem, 12rem);
   display: flex;
   justify-content: center;
   color: #FF6C0A;
   margin-bottom: 3rem;
-  border-bottom: 1px solid #FF6C0A;
+  border-bottom: 0.75rem solid #FF6C0A;
+
 }
 
 .projectsSection, .resumeSection, .contactSection {
@@ -215,6 +218,7 @@
   width: 95%;
   max-width: 60rem;
   box-shadow: 0.75rem 0.75rem 0px 0.0125rem black;
+  transition: all 0.5s;
 }
 
 .projectContainer:last-child {
@@ -328,7 +332,8 @@
 
 
 .resumeBackgroundContainer {
-  background-color: #ff6c0a0d;
+  /* background-color: #ff6c0a28; */
+  width: 100vw;
 }
 .resumeSvgContainer, .resumeLinkContainer {
 display: flex;
@@ -342,7 +347,8 @@ flex-direction: column;
   text-decoration: underline;
   text-underline-offset: 0.75rem;
   padding: 3rem 0rem 3rem 0rem;
-  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 4vw + 1rem, 4.5rem);
+  transition: 0.5s;
 }
 
 .resumeSvgContainer {
@@ -350,7 +356,7 @@ flex-direction: column;
 }
 
 .resumeSVG {
-  width: 95%;
+  width: 90vw
 }
 
 .contactSection {
@@ -358,7 +364,7 @@ display: flex;
 flex-direction: row;
 justify-content: space-around;
 align-items: center;
-max-width: 50rem;
+max-width: 100rem;
 margin: 0 auto;
 }
 
@@ -375,4 +381,5 @@ margin: 0 auto;
   height: 5rem;
   width: 5rem;
   color: #FF6C0A;
+  transition: 0.5s all;
 }

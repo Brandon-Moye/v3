@@ -22,9 +22,6 @@
         text-underline-offset: 1rem; 
     }
 
-    .projectsSection {
-    }
-
     .projectTitle {
         font-size: 3rem;
     }
@@ -37,5 +34,56 @@
 
     .projectLinkToGithub, .projectLinkToLive {
         font-size: 2rem;
+    }
+
+    .resumeLinkPDF {
+        text-underline-offset: 1.25rem;
+    }
+
+}
+
+@media (min-width: 1250px) {
+
+    .projectsSectionTitle {
+        grid-column: 1 / -1;
+    }
+    .projectsSection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+        justify-self: center;
+        gap: 3rem;
+    }
+
+    .projectsSection > * {
+        justify-self: center;
+        align-self: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .projectContainer--queenOfCards {
+        grid-column: 1 / 2;
+    }
+
+    .contactIcon {
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+
+/*
+HOVER STATES
+*/
+
+@media (hover:hover) {
+    .LinksToPageSections:hover, .resumeLinkPDF:hover, .contactIcon:hover {
+        color: #000;
+        transform: translate(5px, 5px);
+    }
+
+    .projectContainer:hover {
+        transform: translate(5px, 5px);
+        box-shadow: none;
     }
 }
