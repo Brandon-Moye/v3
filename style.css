@@ -1,0 +1,631 @@
+/* ---------------------------------------------- */
+/* GENERAL STYLING */
+/* ---------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* width: 100vw; */
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+
+}
+
+body {
+  font-family: "Merriweather", serif;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  margin: 0 auto;
+
+}
+
+/* ---------------------------------------------- */
+/* LARGER ELEMENTS */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* HERO NAV STYLING */
+/* ---------------------------------------------- */
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  /* height: 9rem; */
+  padding-top: 0;
+  padding-bottom: 0;
+  /* width: 100%; */
+  background: rgba(255, 255, 255, 0.4);
+}
+
+
+.allNavContainer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* width: 100vw; */
+  /* background: rgba(255, 255, 255, 0.171); */
+  box-shadow: 0 0rem 20rem rgba(0, 0, 0, 0.336);
+}
+
+.allNavContainerWithAbsolutePositioning {
+  position: absolute;
+}
+
+.otherButtonContainer {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: right;
+  /* align-items: center; */
+  /* background: linear-gradient(90deg, #fff, gray); */
+  /* background: black; */
+  gap: 10rem;
+}
+
+.navButton {
+  text-decoration: none;
+  display: flex;
+  width: 15rem;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.4);
+  font-size: clamp(1rem, 2rem, 3rem);
+  font-weight: 700;
+  color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+}
+
+.landingScreenButton {
+  width: 30rem;
+  margin-left: 2rem;
+  background: transparent;
+  box-shadow: 0rem 0rem 10rem rgba(219, 219, 219, 0);
+}
+
+.contactButton {
+  margin-right: 2rem;
+}
+
+.landingScreenButton:hover,
+.landingScreenButton:active {
+  background-color: #000;
+  color: #e35400;
+  transform: translateY(-0.2rem);
+  box-shadow: 0rem 0rem 5rem #000;
+}
+
+.contactButton:hover,
+.contactButton:active {
+  background-color: #04724d;
+  color: white;
+  transform: translateY(-0.2rem);
+  box-shadow: 0rem 0rem 5rem #04724d;
+}
+
+.projectsButton:hover,
+.projectsButton:active {
+  background-color: #2260b2;
+  color: #fff;
+  transform: translateY(-0.2rem);
+  box-shadow: 0rem 0rem 5rem #2260b2;
+}
+
+.resumeButton:hover,
+.resumeButton:active {
+  background-color: purple;
+  background-color: #26173d;
+  color: white;
+  transform: translateY(-0.2rem);
+  box-shadow: 0rem 0rem 5rem purple;
+  box-shadow: 0rem 0rem 5rem #26173d;
+}
+
+/* ---------------------------------------------- */
+/* LANDING PAGE */
+/* ---------------------------------------------- */
+
+.heroContainer {
+  width: 100vw;
+  /* height: 110vh; */
+  background: #e35400;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.aboutSectionTextContainer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 1rem;
+}
+
+.hello {
+  text-align: center;
+  font-size: 8rem;
+  background: rgba(0, 0, 0, 0.788);
+  color: #e35400;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+}
+
+.introduction {
+  background: rgba(255, 255, 255, 0.123);
+  box-shadow: 0rem 10rem 20rem rgba(0, 0, 0, 0.212);
+
+  font-size: 5.5rem;
+  padding: 2rem;
+  width: 120rem;
+  height: fit-content;
+  border-radius: 30px;
+  margin-bottom: 15rem;
+}
+
+.codingLanguageText {
+  background-color: black;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  border-radius: 10px;
+}
+
+.ReactCodingLanguageText {
+  color: #61DBFB;
+  animation: ReactTextAnimation 1.5s ease-in forwards infinite alternate 1s;
+  /* animation-fill-mode: both; */
+}
+
+.FirebaseCodingLanguageText {
+  color: #FFA611;
+  animation: FirebaseTextAnimation 1.5s ease-in forwards infinite alternate 0s;
+
+}
+
+.JavaScriptCodingLanguageText {
+  color: #f0db4f;
+  animation: JavaScriptTextAnimation 1.5s ease-in forwards infinite alternate 4s;
+
+}
+
+.HTMLCodingLanguageText {
+  color: #E44D26;
+  animation: HTMLTextAnimation 1.5s ease-in forwards infinite alternate 5s;
+
+}
+
+.CSSCodingLanguageText {
+  color: #264de4;
+  animation: CSSTextAnimation 2s ease-in forwards infinite alternate 2s;
+
+}
+
+
+
+@keyframes ReactTextAnimation {
+  0% {
+    color: #61DBFB;
+  }
+  100% {
+    color: #04b6e8;
+  }
+}
+@keyframes FirebaseTextAnimation {
+  0% {
+    color: #FFA611;
+  }
+  100% {
+    color: #ffe3b1;
+  }
+}
+@keyframes JavaScriptTextAnimation {
+  0% {
+    color: #f0db4f;
+  }
+  100% {
+    color: #fbf3be;
+  }
+}
+@keyframes HTMLTextAnimation {
+  0% {
+    color: #E44D26;
+  }
+  100% {
+    color: #de7a61;
+  }
+}
+@keyframes CSSTextAnimation {
+  0% {
+    color: #264de4;
+  }
+  100% {
+    color: #5d76d9;
+  }
+}
+
+
+/* ---------------------------------------------- */
+/* PROJECTS SECTION */
+/* ---------------------------------------------- */
+.projectsSection {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  /* height: 100vh; */
+  background: #2260b2;
+  padding-top: 10rem;
+}
+
+.projectsSectionTitle {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.projectContainer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  width: 120rem;
+  height: 30rem;
+  outline: 3px solid white;
+  border-radius: 30px;
+  margin-bottom: 10rem;
+}
+
+.projectContainer--hangman {
+  margin-top: 1rem;
+}
+
+.projectContainer--carousel {
+  margin-bottom: 0rem;
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE SECTION */
+/* ---------------------------------------------- */
+
+.linkContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: flex-start;
+  color: #bdcfe8;
+  margin-top: 1.5rem;
+  gap: 5rem;
+}
+
+/* .projectLink:after {
+  content: " \2192";
+  color: lightblue;
+} */
+
+.projectLink:link,
+.projectLink:visited {
+  color: lightblue;
+  text-decoration: none;
+  transition: all ease-in-out 0.4s;
+  border-bottom: 1px solid transparent;
+}
+
+.projectLink:hover,
+.projectLink:active {
+  color: darkorange;
+  border-color: darkorange; /* content: "\2192"; */
+  transform: translateY(-0.2rem);
+}
+
+.projectImage {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 30px;
+  outline: 2px solid white;
+
+}
+
+/* ---------------------------------------------- */
+/* PROJECTS IMAGE ANIMATION SECTION */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* PROJECTS DESCRIPTION SECTION */
+/* ---------------------------------------------- */
+
+.projectDescription {
+  padding: 2rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.projectBodyText {
+  color: lightblue;
+  font-size: 2rem;
+  grid-row: 1;
+  grid-column: 2;
+  grid-column: 2;
+}
+
+/* ---------------------------------------------- */
+/* ANIMATION STYLING */
+/* ---------------------------------------------- */
+
+.projects {
+  transition: all 0.5s;
+  /* box-shadow: 0rem 0rem 15rem 0.1rem rgba(0, 0, 0, 0.2); */
+}
+
+.projects:link,
+.projects:visited {
+  background-color: #e35400;
+  color: #000;
+}
+
+.projectsMouseOver {
+  background: linear-gradient(90deg, #0e0e9c, #add8e6);
+  color: white;
+}
+.resume {
+  transition: all 0.5s;
+}
+
+.resume:link,
+.resume:visited {
+  background-color: #e35400;
+  color: black;
+}
+
+.about {
+  transition: all 0.5s;
+}
+
+.about:link,
+.about:visited {
+  background-color: #e35400;
+  color: black;
+}
+
+.about:hover,
+.about:active {
+  background-color: green;
+  color: white;
+  transform: translateY(-0.3rem);
+  box-shadow: 0rem 0rem 30rem green;
+}
+
+/* ---------------------------------------------- */
+/* RESUME SECTION */
+/* ---------------------------------------------- */
+
+.resumeSection {
+  margin: 0 auto;
+  width: 100vw;
+  background: #26173d;
+  display: grid;
+  padding-top: 10rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.resumeSectionTitle {
+  font-size: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resumeLinkContainer {
+  margin-top: 1rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  /* width: 30rem; */
+  /* background: red; */
+  border-radius: 5px;
+}
+
+.resumeLinkPDF:link,
+.resumeLinkPDF:visited {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #26173d;
+  background: #675d77;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.resumeLinkPDF:hover,
+.resumeLinkPDF:active {
+  background: #26173d;
+  color: #675d77;
+  box-shadow: 0px 10px 30px #0f0918;
+}
+
+.downloadPDFIcon {
+  color: #675d77;
+  width: 3rem;
+  height: 3rem;
+}
+
+.resumeSVG {
+  width: 125rem;
+  margin-top: 2.5rem;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------------------------------------------- */
+/* ABOUT SECTION */
+/* ---------------------------------------------- */
+
+.contactSection {
+  margin: 0 auto;
+  width: 100vw;
+  /* height: 100vh; */
+  /* z-index: 3; */
+  background: #04724d;
+}
+
+.contactSectionTitle {
+  font-size: 10rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 2rem; */
+  padding-top: 10rem;
+}
+
+/*-------------   STARTING OVER WITH CSS CODE FOR FORM SETUP ----------*/
+
+/*FORM FORMATTING*/
+
+.contactMeForm {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nameContainer {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.emailContainer {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.messageAndSubmitButtonContainer {
+  grid-column: 2 /3;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.nameLabel,
+.emailLabel,
+.messageLabel {
+  font-size: 2rem;
+  color: #cde3db;
+  margin-left: 1rem;
+}
+
+.nameInput,
+.emailInput,
+.messageBodyInput {
+  height: 5rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.messageBodyInput {
+  height: 25rem;
+  display: flex;
+  resize: none;
+  font-family: "Merriweather", serif;
+}
+
+.submit {
+  height: 3rem;
+  border: none;
+  margin-top: 1rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  background: #cde3db;
+  color: #04724d;
+}
+
+.submit:hover {
+  background: #04724d;
+  color: #cde3db;
+  cursor: pointer;
+  box-shadow: 0px 10px 30px #023927;
+  transform: translateY(-0.2rem);
+}
+
+/*ACTUAL CONTACT INFO*/
+
+.contactIcon {
+  width: 4rem;
+  height: 4rem;
+  color: #cde3db;
+}
+
+.contactLink:link,
+.contactLink:visited {
+  text-decoration: none;
+  color: #cde3db;
+  font-style: normal;
+  font-size: 4rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-left: 1rem;
+}
+
+.contactLink:hover,
+.link:active {
+  background: #cde3db;
+  color: #04724d;
+  box-shadow: 0px 10px 30px #023927;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15rem;
+  margin-left: 2.5rem;
+}
+
+.phoneContainer,
+.emailInfoContainer,
+.linkedInContainer,
+.githubContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.githubContainer {
+  margin-bottom: 10rem;
+}
+

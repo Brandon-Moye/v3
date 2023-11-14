@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'VT323', monospace;
+  }
+
+
+.webpageTitle {
+    background-color: 	#f00000;
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.blackPokeballElement {
+    height: 1.5rem;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.pokemonSearchContainer {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pokemonSearchContainer > * {
+    border: none;
+    outline: none;
+}
+
+#pokemonInput {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    border-bottom: 1px solid black;
+}
+
+#searchButton {
+    font-size: 1.5rem;
+    box-shadow: 2px 1px 1px 1px black;
+
+}
+
+.pokemonCardContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: lightgray;
+    width: 95vw;
+    height: 75vh;
+    max-width: 35rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#pokemonImage {
+    grid-column: 1/-1; 
+    grid-row: 1;
+    /* width: 50vw; */
+    max-height: 10rem;
+    justify-self: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px black;
+}
+
+.cardLabel {
+    grid-column: 1;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cardInfo {
+    font-size: 1.5rem;
+}
+
+#pokemonName {
+    font-size: 2.25rem;
+    padding-left: 1rem;
+
+
+}
+
+#species {
+    grid-column: 2/4;
+}
+
+.linkToTheGithub {
+    /* text-decoration: none; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 1.25rem;
+}

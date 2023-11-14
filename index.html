@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <link rel="stylesheet" href="queries.css" /> -->
+    <link rel="stylesheet" href="queries2.css" />
+    <title>Brandon Moye</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <nav class="allNavContainer">
+      <a class="navButton projectsButton" href="#projectsSection">Projects</a>
+      <a class="navButton resumeButton" href="#resumeSection">Resume</a>
+      <a class="navButton contactButton" href="#contactSection">Reach Out!</a>
+    </nav> -->
+
+    <section class="introduction">
+      <p class="salutations">Hi there, thanks for checking out my page!</p>
+      <p class="heroPageBodyText">
+        Take a look below to see my
+        <a class="LinksToPageSections" href="#projectsSection">projects</a>,
+        download a copy of my
+        <a class="LinksToPageSections" href="#resumeSection">resume</a>, or
+        <a class="LinksToPageSections" href="#contactSection">reach out</a>
+        to me!
+        <br />
+      </p>
+      <p class="signoff">-Brandon</p>
+
+      <!-- <p>My stack:</p>
+        <span class="codingLanguageText ReactCodingLanguageText">React</span>
+        <span class="codingLanguageText FirebaseCodingLanguageText"
+          >Firebase</span
+        >
+        <span class="codingLanguageText JavaScriptCodingLanguageText"
+          >JavaScript</span
+        >
+        <span class="codingLanguageText HTMLCodingLanguageText">HTML</span>
+
+        <span class="codingLanguageText CSSCodingLanguageText">CSS</span> -->
+    </section>
+
+    <!--                -->
+    <!--PROJECTS SECTION-->
+    <!--                -->
+    <section id="projectsSection" class="projectsSection">
+      <h3 class="projectsSectionTitle">Projects</h3>
+      <div class="projectContainer projectContainer--queenOfCards">
+        <h3 class="projectTitle projectTitle--queenOfCards">Queen of Cards</h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/QueenOfCards.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          Racers, start your engines! Get stats and pick your favorites!
+          <br />
+          - Create an account and securely store your data using Firebase<br />
+          - Their season, placement, and wins are all displayed to help you pick
+          your favorites! <br />
+          - React renders the components for each contestant by using an object
+          database <br />
+          - Data was gathered by creating a webscraper <br />
+        </p>
+        <a
+          class="projectLink--queenOfCards projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/Queen-of-Cards"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--queenOfCards projectLinkToLive"
+          href="https://queen-of-cards.netlify.app"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+      <div class="projectContainer projectContainer--whosThatApi">
+        <h3 class="projectTitle projectTitle--whosThatApi">
+          WHO'S THAT API (under construction)
+        </h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="/img/whosThatAPIThumbnail.png"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          Trainers, get high level information on any pokemon with this API!
+          <br />
+          - The API scrapes the web to return relevant information to the
+          user<br />
+          - Using it will require a key, email me for the key! <br />
+          - The API is paired with a frontend component to demonstrate its use
+          <br />
+        </p>
+        <a
+          class="projectLink--whosThatApi projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/whosThatApiFrontEnd"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--whosThatApi projectLinkToLive"
+          href="/whosThatApi/index.html"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+
+      <div class="projectContainer projectContainer--hangman">
+        <h3 class="projectTitle projectTitle--hangman">Hangman</h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/hangman.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          All of the words are a favorite thing of mine to help the player get
+          to know me!
+          <br />
+          - A correct guess will be displayed in the blank boxes <br />
+          - An incorrect guess will generate a line in the picture box <br />
+          - A player can reload to generate a new word if they feel it is a
+          repeat <br />
+          - Every potential word has a category to help the player
+        </p>
+        <a
+          class="projectLink--hangman projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/Hangman"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--hangman projectLinkToLive"
+          href="/Hangman/index.html"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+      <div class="projectContainer projectContainer--ticTacToe">
+        <h3 class="projectTitle projectTitle--ticTacToe">Tic-Tac-Toe</h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/ticTacToe2.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          This is a two player tic-tac-toe game
+          <br />
+          - Players will click on a cell to put down their game piece <br />
+          - The code checks for all potential win patterns to determine a win
+          <br />
+          - The game will display a winner screen with who won and prompt the
+          players to play again <br />
+          - If there is a tie the game will notify the players that no one won
+        </p>
+        <a
+          class="projectLink--ticTacToe projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/Tic-Tac-Toe"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--ticTacToe projectLinkToLive"
+          href="/ticTacToe/index.html"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+      <div class="projectContainer projectContainer--Omnifood">
+        <h3 class="projectTitle projectTitle--Omnifood">
+          Case Study: Omnifood
+        </h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/omnifood2.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          A website focused on design and user experience
+          <br />
+          - I learned the fundamentals of design and popular design styles
+          <br />
+          - The page contains multiple types of design layouts <br />
+          - There is a working contact form where I can view messages people
+          have sent
+        </p>
+        <a
+          class="projectLink--Omnifood projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/Omnifood"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--Omnifood projectLinkToLive"
+          href="https://omnifood-brandon-project.netlify.app/"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+      <!-- <div class="projectContainer proejctContainer--carousel">
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/carousel5.jpeg"
+            alt=""
+          />
+        </div>
+        <div class="projectDescription">
+          <h3>Carousel</h3>
+          <br />
+          <span class="projectBodyText">
+            A shell for an e-commorce like product photo display
+            <br />
+            - This heavily uses JavaScript and CSS to create hover effects<br />
+            - When a user hovers over the smaller photo it appears on the main
+            photo section
+            <br />
+            - If a user hovers over a different photo it will change the main
+            photo
+            <br />
+            - JavaScript allowed me to have the last hovered over photo remain
+            in the main section, even if a user hovered over blank space <br />
+            <div class="linkContainer">
+              <a
+                class="projectLink projectLinkToGithub"
+                href="https://github.com/Brandon-Moye/Carousel"
+                target="_blank"
+                >See in Github &rarr;</a
+              >
+              <a
+                class="projectLink projectLinkToLive"
+                href="/Carousel/index.html"
+                target="_blank"
+                >See Live &rarr;</a
+              >
+            </div>
+          </span>
+        </div>
+      </div> -->
+      <div class="projectContainer proejctContainer--toDoList">
+        <h3 class="projectTitle projectTitle--toDoList">To-Do List</h3>
+        <div id="imageContainer" class="imageContainer">
+          <img
+            id="projectImage"
+            class="projectImage"
+            src="img/To-DoList.jpeg"
+            alt=""
+          />
+        </div>
+        <p class="projectBodyText">
+          <br />
+          - This heavily uses JavaScript and CSS to create hover effects<br />
+          - When a user hovers over the smaller photo it appears on the main
+          photo section
+          <br />
+          - If a user hovers over a different photo it will change the main
+          photo
+          <br />
+          - JavaScript allowed me to have the last hovered over photo remain in
+          the main section, even if a user hovered over blank space <br />
+        </p>
+        <a
+          class="projectLink--toDoList projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/ToDoList"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--toDoList projectLinkToLive"
+          href="/To-Do List/index.html"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
+    </section>
+
+    <section id="resumeSection" class="resumeSection">
+      <h3 class="resumeSectionTitle">Resume</h3>
+      <div class="resumeBackgroundContainer">
+        <div class="resumeLinkContainer">
+          <a
+            class="resumeLinkPDF"
+            href="/moyeResume.pdf"
+            download="moyeResume.pdf"
+            >download pdf</a
+          >
+          <!-- <ion-icon class="downloadPDFIcon" name="download-outline"></ion-icon> -->
+        </div>
+        <div class="resumeSvgContainer">
+          <img class="resumeSVG" src="img/resume.svg" alt="#" />
+        </div>
+      </div>
+    </section>
+
+    <!--             -->
+    <!--CONTACT SECTION-->
+    <!--             -->
+
+    <section id="contactSection" class="contactSection">
+      <!-- <div class="phoneContainer contactTypeContainer">
+        <ion-icon class="contactIcon" name="phone-portrait-outline"></ion-icon>
+        <address>
+          <a class="contactLink linkText" href="tel:2565653398"
+            >(256) 565 3398</a
+          >
+        </address>
+      </div> -->
+      <div class="emailInfoContainer contactTypeContainer">
+        <address>
+          <a
+            class="contactLink linkText"
+            href="mailto:brandon.m.moye@gmail.com"
+          >
+            <ion-icon class="contactIcon" name="mail-outline"></ion-icon>
+          </a>
+        </address>
+      </div>
+      <div class="linkedInContainer contactTypeContainer">
+        <a
+          class="contactLink linkText"
+          href="https://www.linkedin.com/in/moye-brandon/"
+          target="_blank"
+        >
+          <ion-icon class="contactIcon" name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <div class="githubContainer contactTypeContainer">
+        <a
+          class="contactLink linkText"
+          href="https://github.com/Brandon-Moye"
+          target="_blank"
+        >
+          <ion-icon class="contactIcon" name="logo-github"></ion-icon>
+        </a>
+      </div>
+
+      <!-- 
+        will have an about title section, a nav bar on top, a text block with a 
+        brief description on what I have been doing and want to do and a little section
+        that displays all of the languages I am comfortable with (HTML, CSS, JS)
+        
+        ?? How do I want to design the nav bar?? Would the circles still work??
+        
+      -->
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

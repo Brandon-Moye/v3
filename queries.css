@@ -1,0 +1,322 @@
+/* rem and em do NOT depend on html font-size in
+media queries
+1rem = 1em = 16px
+*/
+
+/* BELOW 1300PX (SMALLER COMPUTERS) */
+@media (max-width: 81.25em) {
+  .resumeSVG {
+    width: 110rem;
+  }
+}
+
+/* BELOW 1250PX (TABLETS) */
+@media (max-width: 78.125em) {
+  .introduction {
+    font-size: 5rem;
+    width: 100rem;
+  }
+
+  .codingLanguageText {
+    font-size: 4rem;
+  }
+
+  .projectContainer {
+    width: 100rem;
+  }
+
+  .projectBodyText {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 72.5em) {
+  .resumeSVG {
+    width: 100rem;
+  }
+
+}
+
+/*at 1050 pixels*/
+@media (max-width: 65.625em) {
+  .introduction {
+    font-size: 4.5rem;
+    width: 85rem;
+  }
+
+  .projectContainer {
+    width: 85rem;
+    height: 25rem;
+  }
+
+  .projectBodyText {
+    font-size: 1.4rem;
+  }
+
+  .projectImage {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .resumeSVG {
+    width: 90rem;
+  }
+
+  .navButton {
+    font-size: 2rem;
+    width: 10rem;
+    height: 3.33rem;
+  }
+
+  .landingScreenButton {
+    width: 20rem;
+  }
+
+  .sticky .header {
+    height: 7.3rem;
+  }
+
+  .sticky .heroContainer {
+    margin-top: 7.3rem;
+  }
+}
+
+/*at 950 pixels*/
+@media (max-width: 59.375em) {
+  .introduction {
+    font-size: 4rem;
+    width: 65rem;
+  }
+
+  .codingLanguageText {
+    font-size: 3.85rem;
+  }
+
+  .projectContainer {
+    width: 75rem;
+    height: 25rem;
+  }
+
+  .projectBodyText {
+    font-size: 1.2rem;
+  }
+
+  .resumeSVG {
+    width: 75rem;
+  }
+}
+
+/*at 800 pixels*/
+@media (max-width: 50em) {
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    width: 60rem;
+    height: 25rem;
+  }
+.projectLink {
+  font-size: 1rem;
+}
+  .projectLinkToGithub {
+    margin-left: 0rem;
+  }
+
+  .resumeSVG {
+    width: 60rem;
+  }
+}
+
+/*at 745 pixels*/
+@media (max-width: 750px) {
+  .contactLink:link,
+  .contactLink:visited,
+  .contactLink:hover,
+  .contactLink:active {
+    font-size: 3rem;
+  }
+
+
+  .introduction {
+    font-size: 3.75rem;
+    width: 60rem;
+  }
+
+  .codingLanguageText {
+    font-size: 2.75rem;
+  }
+
+
+  .landingScreenButton {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    width: 17rem;
+  }
+
+  .navButton {
+    font-size: 1.7rem;
+  }
+
+  .otherButtonContainer {
+    gap: 5rem;
+  }
+
+
+}
+
+/* at 650 pixels*/
+@media (max-width: 40.625em) {
+  .introduction {
+    width: 40rem;
+    font-size: 3.25rem;
+    
+  }
+
+
+  .otherButtonContainer {
+    gap: 3rem;
+  }
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50rem;
+    height: 50rem;
+    font-size: 1.5rem;
+  }
+  .resumeSVG {
+    width: 45rem;
+  }
+
+  .contactMeForm {
+    justify-items: center;
+  }
+
+  .nameInput,
+  .emailInput {
+    width: 20rem;
+    font-size: 1.5rem;
+  }
+
+  .messageBodyInput,
+  .submit {
+    width: 25rem;
+  }
+
+  .messageBodyInput {
+    font-size: 1.5rem;
+  }
+}
+
+/*at 575 pixels*/
+@media (max-width: 35.9375em) {
+.allNavContainer {
+  height: 7.25rem;
+}
+  .otherButtonContainer {
+    justify-content: center;
+    gap: 1rem;
+  }
+  .navButton {
+    font-size: 1rem;
+    width: 6rem;
+    height: 2.5rem;
+  }
+
+  .landingScreenButton {
+    width: 9rem;
+
+  }
+
+  .hello {
+    font-size: 4rem;
+  }
+  .introduction {
+    font-size: 3.25rem;
+    width: 40rem;
+  }
+
+  .codingLanguageText {
+    font-size: 2.75rem;
+    border-radius: 7px;
+  }
+
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 40rem;
+    height: 55rem;
+    
+  }
+  .projectDescription {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+  .resumeSVG {
+    width: 40rem;
+  }
+
+  .contactMeForm * {
+    width: 3rem;
+  }
+
+  .contactLink:link {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 475px) {
+
+  .projectsSectionTitle, .resumeSectionTitle, .contactSectionTitle {
+    font-size: 8rem;
+  }
+  .contactLink:link {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+
+  .hello {
+    font-size: 3.5rem;
+    border-radius: 20px;
+  }
+  .introduction {
+    font-size: 2.35rem;
+    width: 35rem;
+
+  }
+
+  .codingLanguageText {
+    font-size: 2.25rem;
+    border-radius: 7px;
+  }
+
+  .projectContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 32rem;
+    height: 55rem;
+    font-size: 1rem;
+  }
+
+  .projectImage {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .resumeSVG {
+    width: 35rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .projectsSectionTitle, .resumeSectionTitle, .contactSectionTitle {
+    font-size: 7rem;
+  }
+
+  .resumeSVG {
+    width: 30rem;
+  }
+}

@@ -1,0 +1,139 @@
+/* GENERAL STYLING --------------------------------------------------------------------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*making the page scalable by setting font scales*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: black;
+  overflow-x: hidden;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+/* IMAGE AND BUTTONS SECTOIN -------------------------------------------------------------------- */
+
+#imgContainer {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  transition: 1s;
+  margin-top: 15rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.mainImage {
+  /* align-items: right; */
+
+  width: 40rem;
+  height: 40rem;
+  /* border: 1px solid red; */
+  display: block;
+  margin: 0 auto;
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  margin-left: 1rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.image1 {
+  cursor: pointer;
+  transition: 0s;
+}
+
+.image2 {
+  grid-row: 2;
+  cursor: pointer;
+  transition: 0s;
+}
+
+.image3 {
+  grid-row: 3;
+  cursor: pointer;
+  transition: 0s;
+}
+
+.permaHoverImage1 {
+  background-image: url(img/IMG_1.jpg);
+  object-fit: fill;
+  background-size: 40rem;
+}
+.permaHoverImage2 {
+  background-image: url(img/IMG_2.JPG);
+  background-size: 30rem;
+}
+.permaHoverImage3 {
+  background-image: url(img/IMG_3.JPG);
+  background-size: 30rem;
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+/* IMAGE TRANSITION SECTION -------------------------------------------------------------------- */
+
+/* .failedProject:hover ~ .mainImage {
+  background-image: url(img/failedProject.jpg);
+ 
+} */
+
+img:hover {
+  box-shadow: 0 0 30px 8px #ff9900;
+  transition: 0s;
+}
+
+/* .pump1:hover ~ .mainImage {
+  background-image: url(img/pump1.jpg);
+  cursor: pointer;
+}
+
+.safteyScary:hover ~ .mainImage {
+  background-image: url(img/safteyScary.jpg);
+  cursor: pointer;
+} */
+
+/* ---------------------------------------------------------------------------------------------- */
+
+/* using a permanent hover class with Javascript? */
+
+@media (max-width: 600px) {
+  .mainImage {
+    width: 30rem;
+  }
+
+  .img {
+    width: 10;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainImage {
+    width: 25rem;
+  }
+
+  .img {
+    width: 7rem;
+    height: 7rem;
+  }
+}

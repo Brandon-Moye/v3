@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <div id="letterContainer" class="letterContainer">
+      <div class="letterBlanks">Blanks1</div>
+    </div> -->
+    <!-- <h1 class="title">Hangman</h1> -->
+    <!-- <a class="returnToSite" href="/index.html">Return To Site</a> -->
+    <div class="gameContainer">
+      <div id="hangmanContainer" class="hangmanContainer">
+        <div id="platform" class="hidden platform"></div>
+        <div id="post" class="hidden post"></div>
+        <div id="rope" class="hidden rope"></div>
+        <div id="head" class="hidden head"></div>
+        <div id="body" class="hidden body"></div>
+        <div id="leftArm" class="hidden leftArm"></div>
+        <div id="rightArm" class="hidden rightArm"></div>
+        <div id="leftLeg" class="hidden leftLeg"></div>
+        <div id="rightLeg" class="hidden rightLeg"></div>
+      </div>
+      <table id="visibleCells"></table>
+      <div class="reloadAndHintContainer">
+        <button class="reload" type="button">Reload</button>
+        <div id="hint"></div>
+      </div>
+      <form
+        class="form"
+        autocomplete="off"
+        onsubmit="guessingLetters(); return false"
+      >
+        <input id="letter" type="text" />
+        <button id="submit" class="submit" type="submit">Guess</button>
+      </form>
+      <h2 class="incorrectLettersTitle">Incorrect Letters</h2>
+      <div id="wrongGuessContainer"></div>
+      <div id="finalMessage"></div>
+      <button id="reset" class="hidden reset">Play Again</button>
+    </div>
+    <script src="scriptExperiment.js"></script>
+  </body>
+</html>
