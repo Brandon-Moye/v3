@@ -36,8 +36,12 @@
 // SMOOTH SCROLLINGH
 // --------------------------
 
+const hamburgerIcon = document.getElementById("hamburgerIcon")
+const hamburgerIconNavMenu = document.getElementById("allNavContainer")
+const ticTacToe = document.getElementById("projectLink--ticTacToe")
 const allLinks = document.querySelectorAll("a.LinksToPageSections");
 const workingLinks = document.getElementsByClassName("projectLink");
+const appearOptions = {};
 // const allLinks = document.getElementsByClassName("navButton");
 
 allLinks.forEach(function (link) {
@@ -57,6 +61,36 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+hamburgerIcon.addEventListener('click', () => {
+  hamburgerIconNavMenu.classList.toggle("hidden")
+})
+
+// const toggleHamburgerVisibility = new IntersectionObserver(entries => {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting && entry.isIntersecting > 0) {
+//       hamburgerIcon.classList.remove("hidden")
+//       hamburgerIconNavMenu.classList.add("hidden")
+//       oberserver.unobserve(ticTacToe)
+//     } else {
+//       hamburgerIcon.classList.add("hidden")
+//     }
+//   });
+// });
+
+// toggleHamburgerVisibility.observe(ticTacToe)
+
+window.addEventListener('scroll', () => {
+  console.log(window.scrollY)
+  if (window.scrollY > 950) {
+    hamburgerIcon.classList.remove("hidden")
+  } else {
+    hamburgerIcon.classList.add("hidden")
+    hamburgerIconNavMenu.classList.add("hidden")
+  }
+})
+
+
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 // ------------------------------------------------------

@@ -42,8 +42,12 @@
     />
   </head>
   <body>
-    <ion-icon name="menu-sharp" class="hamburgerIcon"></ion-icon>
-    <nav class="allNavContainer">
+    <ion-icon
+      name="menu-sharp"
+      id="hamburgerIcon"
+      class="hamburgerIcon hidden"
+    ></ion-icon>
+    <nav id="allNavContainer" class="allNavContainer hidden">
       <a class="navButton projectsButton" href="#projectsSection">Projects</a>
       <a class="navButton resumeButton" href="#resumeSection">Resume</a>
       <a class="navButton contactButton" href="#contactSection">Reach Out!</a>
@@ -112,7 +116,9 @@
           >See Live</a
         >
       </div>
-      <div class="projectContainer projectContainer--whosThatApi">
+      <div
+        class="projectContainer projectContainer--whosThatApi"
+      >
         <h3 class="projectTitle projectTitle--whosThatApi">
           WHO'S THAT API (under construction)
         </h3>
@@ -201,6 +207,7 @@
           - If there is a tie the game will notify the players that no one won
         </p>
         <a
+          id="projectLink--ticTacToe"
           class="projectLink--ticTacToe projectLinkToGithub"
           href="https://github.com/Brandon-Moye/Tic-Tac-Toe"
           target="_blank"
