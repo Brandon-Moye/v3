@@ -429,5 +429,6 @@ body {
   height: 5rem;
   width: 5rem;
   color: #FF6C0A;
+  fill: #FF6C0A;
   transition: 0.5s all;
 }
