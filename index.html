@@ -18,9 +18,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
     <link rel="stylesheet" href="style2.css" />
-    <!-- <link rel="stylesheet" href="queries.css" /> -->
     <link rel="stylesheet" href="queries2.css" />
     <title>Brandon Moye</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -67,16 +65,6 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- <ion-icon
-      name="menu-sharp"
-      id="hamburgerIcon"
-      class="hamburgerIcon hidden"
-    ></ion-icon>
-    <nav id="allNavContainer" class="allNavContainer hidden">
-      <a class="navButton projectsButton LinksToPageSections" href="#projectsSection">Projects</a>
-      <a class="navButton resumeButton LinksToPageSections" href="#resumeSection">Resume</a>
-      <a class="navButton contactButton LinksToPageSections" href="#contactSection">Reach Out!</a>
-    </nav> -->
     <section class="introduction">
       <p class="salutations">Hi there, thanks for checking out my page!</p>
       <p class="heroPageBodyText">
@@ -108,6 +96,40 @@
     <!--                -->
     <section id="projectsSection" class="projectsSection">
       <h3 class="projectsSectionTitle">Projects</h3>
+      <div class="projectContainer projectContainer--bridge">
+        <h3 class="projectTitle projectTitle--bridge">
+          Bridge (under construction)
+        </h3>
+        <div id="imageContainer" class="imageContainer">
+          <!-- <img
+            id="projectImage"
+            class="projectImage"
+            src="img/QueenOfCards.jpeg"
+            alt=""
+          /> -->
+        </div>
+        <p class="projectBodyText">
+          Life can be tough, and it can be hard to keep track of the good things
+          <br />
+          - Users can post daily gratitudes that are stored in MongoDB<br />
+          - MongoDB Realm functions handle the CRUD operations <br />
+          - A data processing pipeline pipeline queries, combines, and sorts
+          relevant data to the user <br />
+          - Users are authenticated through Firebase <br />
+        </p>
+        <a
+          class="projectLink--bridge projectLinkToGithub"
+          href="https://github.com/Brandon-Moye/Bridge"
+          target="_blank"
+          >See in Github</a
+        >
+        <a
+          class="projectLink--bridge projectLinkToLive"
+          href="https://bridgetheapp.us/login"
+          target="_blank"
+          >See Live</a
+        >
+      </div>
       <div class="projectContainer projectContainer--queenOfCards">
         <h3 class="projectTitle projectTitle--queenOfCards">Queen of Cards</h3>
         <div id="imageContainer" class="imageContainer">
@@ -275,7 +297,7 @@
           >See Live</a
         >
       </div>
-      <div class="projectContainer proejctContainer--toDoList">
+      <!-- <div class="projectContainer proejctContainer--toDoList">
         <h3 class="projectTitle projectTitle--toDoList">To-Do List</h3>
         <div id="imageContainer" class="imageContainer">
           <img
@@ -306,7 +328,7 @@
           target="_blank"
           >See Live</a
         >
-      </div>
+      </div> -->
     </section>
 
     <section id="resumeSection" class="resumeSection">
