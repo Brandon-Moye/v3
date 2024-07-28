@@ -1,101 +1,94 @@
 @media (min-width: 600px) {
+  .introduction {
+    min-height: 60rem;
+  }
 
-    .introduction {
-        min-height: 60rem;
-    }
+  .salutations,
+  .signoff {
+    font-size: clamp(3.5rem, 8vw + 1rem, 8rem);
+    line-height: 8rem;
+  }
 
-    .salutations,
-    .signoff {
-        font-size: clamp(3.5rem, 8vw + 1rem, 8rem);
-        line-height: 8rem;
+  .heroPageBodyText {
+    line-height: 5.5rem;
+    margin-bottom: 2.5rem;
+    font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  }
 
-    }
+  .LinksToPageSections {
+    color: #ff6c0a;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+  }
 
-    .heroPageBodyText {
-        line-height: 5.5rem;
-        margin-bottom: 2.5rem;
-        font-size: clamp(2rem, 4vw + 1rem, 4rem);
-    }
+  .projectTitle {
+    font-size: 3rem;
+  }
 
-    .LinksToPageSections {
-        color: #FF6C0A;
-        text-decoration: underline;
-        text-underline-offset: 1rem;
-    }
+  .projectBodyText {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
 
-    .projectTitle {
-        font-size: 3rem;
-    }
+  .projectLinkToGithub,
+  .projectLinkToLive {
+    font-size: 2rem;
+  }
 
-    .projectBodyText {
-        font-size: 2rem;
-        line-height: 2.25rem;
-
-    }
-
-    .projectLinkToGithub,
-    .projectLinkToLive {
-        font-size: 2rem;
-    }
-
-    .resumeLinkPDF {
-        text-underline-offset: 1.25rem;
-    }
-
+  .resumeLinkPDF {
+    text-underline-offset: 1.25rem;
+  }
 }
 
 @media (min-width: 1250px) {
+  .projectsSectionTitle {
+    grid-column: 1 / -1;
+  }
 
-    .projectsSectionTitle {
-        grid-column: 1 / -1;
-    }
+  .projectsSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+    gap: 3rem;
+  }
 
-    .projectsSection {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-self: center;
-        justify-self: center;
-        gap: 3rem;
-    }
+  .projectsSection > * {
+    justify-self: center;
+    align-self: flex-start;
+    margin-bottom: 0rem;
+  }
 
-    .projectsSection>* {
-        justify-self: center;
-        align-self: flex-start;
-        margin-bottom: 0rem;
-    }
+  .projectContainer--bridge {
+    grid-column: 1 / 2;
+  }
 
-    .projectContainer--queenOfCards {
-        grid-column: 1 / 2;
-    }
-
-    .contactIcon {
-        height: 8rem;
-        width: 8rem;
-    }
+  .contactIcon {
+    height: 8rem;
+    width: 8rem;
+  }
 }
-
 
 /*
 HOVER STATES
 */
 
-@media (hover:hover) {
+@media (hover: hover) {
+  .LinksToPageSections:hover,
+  .resumeLinkPDF:hover,
+  .contactIcon:hover {
+    color: #000;
+    fill: #000;
+    transform: translate(2.5px, 2.5px);
+  }
 
-    .LinksToPageSections:hover,
-    .resumeLinkPDF:hover,
-    .contactIcon:hover {
-        color: #000;
-        fill: #000;
-        transform: translate(2.5px, 2.5px);
-    }
+  .projectContainer:hover {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+  }
 
-    .projectContainer:hover {
-        transform: translate(5px, 5px);
-        box-shadow: none;
-    }
-
-    .projectLinkToGithub:hover,
-    .projectLinkToLive:hover {
-        background-color: transparent;
-    }
+  .projectLinkToGithub:hover,
+  .projectLinkToLive:hover {
+    background-color: transparent;
+  }
 }
